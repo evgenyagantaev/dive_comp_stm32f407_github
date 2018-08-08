@@ -46,6 +46,8 @@
 #include "usart.h"
 #include "gpio.h"
 
+#include <GFXC.h>
+
 #define DEG_2_8 256.0
 #define DEG_2_23 8388608.0
 #define DEG_2_18 262144.0
@@ -59,6 +61,7 @@
 #define PRESSURE_OVERSAMPLING 100
 
 /* Private variables ---------------------------------------------------------*/
+TextParamStruct TS;
 
 /* Private variables ---------------------------------------------------------*/
 
@@ -124,7 +127,7 @@ int main(void)
   	MX_USART1_UART_Init();
   	MX_SPI3_Init();
 	// enable spi3
-	SPI2->CR1 |= SPI_CR1_SPE;
+	SPI3->CR1 |= SPI_CR1_SPE;
   	MX_RTC_Init();
   	MX_TIM1_Init();
   	MX_TIM2_Init();
@@ -136,6 +139,16 @@ int main(void)
   	HAL_GPIO_WritePin(led_tft_GPIO_Port, led_tft_Pin, GPIO_PIN_SET); // turn tft led on
   	HAL_GPIO_WritePin(reset_tft_GPIO_Port, reset_tft_Pin, GPIO_PIN_SET); // tft reset high 
 	
+	ILI9163Init();
+	ClrScrn();
+	TS.Size = 1;
+	TS.Font = StdFont;
+	TS.XPos = 0;
+	TS.YPos = 0;
+	TS.TxtCol = Blue;
+	TS.BkgCol = Black;
+
+	PStr("Hello!", &TS);
 	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

@@ -1,10 +1,8 @@
 #ifndef ILI9163_H
 #define ILI9163_H
 
-#include <stm32f0xx_gpio.h>
-#include <stm32f0xx_spi.h>
-#include <stm32f0xx_rcc.h>
-#include <string.h>
+#include "stm32f4xx_hal.h"
+#include "main.h"
 
 typedef enum WModesS{
 	Dat,

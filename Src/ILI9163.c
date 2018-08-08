@@ -2,13 +2,14 @@
 
 extern volatile uint32_t MSec;
 
-void Delay(uint32_t MS){
-	volatile uint32_t MSS = MSec;
-	while((MSec - MSS)<MS) asm volatile ("nop");
+void Delay(uint32_t MS)
+{
+	HAL_Delay(MS);
 }
 
 //RGB222 to RGB565
-uint16_t EToS(uint8_t Col){
+uint16_t EToS(uint8_t Col)
+{
 	uint16_t Temp = 0;
 
 	/* 8 bit
@@ -24,25 +25,56 @@ uint16_t EToS(uint8_t Col){
 	return Temp;
 }
 
-void SB(uint8_t Data, uint8_t DR){
-	if(DR == Dat) GPIO_SetBits(GPIOA, AOPin);
-	else GPIO_ResetBits(GPIOA, AOPin);
+uint8_t write_byte_in_tft(uint8_t data)
+{
 
-	SPI_SendData8(SPI1, Data);
-	while(SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_BSY) == SET);
+	uint8_t data_out;
+    uint8_t read_data;
+
+	// wait for spi transmitter readiness
+	while ((SPI3->SR & SPI_SR_TXE) == RESET );
+	data_out = data;
+    SPI3->DR = data_out;
+    // wait while a transmission complete
+	while ((SPI3->SR & SPI_SR_RXNE) == RESET );
+    read_data = SPI3->DR;
+	
+	return read_data;
+
+	
 }
 
-void SW(uint16_t Data, uint8_t DR){
-	if(DR == Dat) GPIO_SetBits(GPIOA, AOPin);
-	else GPIO_ResetBits(GPIOA, AOPin);
+void SB(uint8_t Data, uint8_t DR)
+{
+	if(DR == Dat) 
+    	a0_tft_GPIO_Port->BSRR = (uint32_t)a0_tft_Pin ;	// set
+	else 
+    	a0_tft_GPIO_Port->BSRR = (uint32_t)(a0_tft_Pin << 16); 	// reset
 
-	SPI_SendData8(SPI1, Data>>8);
-	while(SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_BSY) == SET);
-	SPI_SendData8(SPI1, Data);
-	while(SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_BSY) == SET);
+	// chipselect low
+    spi3_cs_tft_GPIO_Port->BSRR = (uint32_t)(spi3_cs_tft_Pin << 16); 	// reset
+	write_byte_in_tft(Data);
+	// chipselect high
+    spi3_cs_tft_GPIO_Port->BSRR = (uint32_t)spi3_cs_tft_Pin ;	// set
 }
 
-void SetAddr(uint8_t X1, uint8_t Y1, uint8_t X2, uint8_t Y2){
+void SW(uint16_t Data, uint8_t DR)
+{
+	if(DR == Dat) 
+    	a0_tft_GPIO_Port->BSRR = (uint32_t)a0_tft_Pin ;	// set
+	else 
+    	a0_tft_GPIO_Port->BSRR = (uint32_t)(a0_tft_Pin << 16); 	// reset
+
+	// chipselect low
+    spi3_cs_tft_GPIO_Port->BSRR = (uint32_t)(spi3_cs_tft_Pin << 16); 	// reset
+	write_byte_in_tft((uint8_t)(Data>>8));
+	write_byte_in_tft((uint8_t)Data);
+	// chipselect high
+    spi3_cs_tft_GPIO_Port->BSRR = (uint32_t)spi3_cs_tft_Pin ;	// set
+}
+
+void SetAddr(uint8_t X1, uint8_t Y1, uint8_t X2, uint8_t Y2)
+{
 	SB(0x2A, Reg);
 	SB(0x00, Dat);
 	SB(X1, Dat);
@@ -57,7 +89,8 @@ void SetAddr(uint8_t X1, uint8_t Y1, uint8_t X2, uint8_t Y2){
 	SB(0x2C, Reg);
 }
 
-void SetScrn(Colours8 Colour){
+void SetScrn(Colours8 Colour)
+{
 	uint16_t XCnt, YCnt;
 
 	SetAddr(0, 0, XPix-1, YPix-1);
@@ -69,17 +102,20 @@ void SetScrn(Colours8 Colour){
 	}
 }
 
-void ClrScrn(void){
+void ClrScrn(void)
+{
 	SetScrn(BKGCol);
 }
 
-void WritePix(uint16_t X, uint16_t Y, Colours8 Colour){
+void WritePix(uint16_t X, uint16_t Y, Colours8 Colour)
+{
 	SetAddr(X, Y, X, Y);
 	//PCol(Colour);
 	SW(Colour, Dat);
 }
 
-void PCol(Colours8 Colour){
+void PCol(Colours8 Colour)
+{
 	/*
 	switch(Colour){
 	case Black:
@@ -110,38 +146,23 @@ void PCol(Colours8 Colour){
 	*/
 }
 
-void SleepMode(uint8_t Mode){
+void SleepMode(uint8_t Mode)
+{
 	if(Mode == Sleep) SB(0x10, Reg);
 	else SB(0x11, Reg);
 	Delay(120);
 }
 
-void InvMode(uint8_t Mode){
+void InvMode(uint8_t Mode)
+{
 	if(Mode==0) SB(0x20, Reg);
 	else SB(0x21, Reg);
 }
 
-GPIO_InitTypeDef G;
-SPI_InitTypeDef S;
 
 void ILI9163Init(void){
-	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA, ENABLE);
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_SPI1, ENABLE);
 
-	G.GPIO_Pin = CSPin | ResPin | AOPin | BLPin | VCCPin;
-	G.GPIO_Mode = GPIO_Mode_OUT;
-	G.GPIO_OType = GPIO_OType_PP;
-	G.GPIO_PuPd = GPIO_PuPd_NOPULL;
-	G.GPIO_Speed = GPIO_Speed_10MHz;
-	GPIO_Init(GPIOA, &G);
-
-	G.GPIO_Pin = DatPin | ClkPin;
-	G.GPIO_Mode = GPIO_Mode_AF;
-	GPIO_Init(GPIOA, &G);
-
-	GPIO_PinAFConfig(GPIOA, DatPS, GPIO_AF_0);
-	GPIO_PinAFConfig(GPIOA, ClkPS, GPIO_AF_0);
-
+	/*
 	S.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_2;
 	S.SPI_CPHA = SPI_CPHA_1Edge;
 	S.SPI_CPOL = SPI_CPOL_Low;
@@ -151,13 +172,7 @@ void ILI9163Init(void){
 	S.SPI_NSS = SPI_NSS_Soft;
 	SPI_Init(SPI1, &S);
 	SPI_Cmd(SPI1, ENABLE);
-
-	GPIO_ResetBits(GPIOA, ResPin);
-	Delay(20);
-	GPIO_SetBits(GPIOA, ResPin);
-	Delay(20);
-	GPIO_ResetBits(GPIOA, CSPin);
-	GPIO_SetBits(GPIOA, BLPin);
+	*/
 
 	/*
 	SB(0x11, Reg); //Exit sleep
