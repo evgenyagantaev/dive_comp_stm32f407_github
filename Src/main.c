@@ -47,6 +47,7 @@
 #include "gpio.h"
 
 #include <GFXC.h>
+#include <oled.h>
 
 #define DEG_2_8 256.0
 #define DEG_2_23 8388608.0
@@ -149,6 +150,15 @@ int main(void)
 	TS.BkgCol = Black;
 
 	PStr("Hello!", &TS);
+
+
+	OLED_init();
+	LCD_Clear();
+	LCD_Goto(0,0);
+	OLED_string("DIVE COMPUTER");
+	LCD_Goto(0,2);
+	OLED_string("STARTING...");
+	
 	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -201,6 +211,7 @@ int main(void)
 	double P;
 
 	HAL_Delay(1000);
+	LCD_Clear();
 
 	while (1)
 	{
@@ -327,6 +338,19 @@ int main(void)
 		HAL_UART_Transmit(&huart1, message, strlen((const char *)message), 500);
 
 
+		//LCD_Clear();
+		LCD_Goto(0,0);
+		sprintf(timestamp, "%02x.%02x.%02x", sDate.Date, sDate.Month, sDate.Year);
+		OLED_string(timestamp);
+		LCD_Goto(0,2);
+		sprintf(timestamp, "%02x:%02x:%02x", sTime.Hours, sTime.Minutes, sTime.Seconds);
+		OLED_string(timestamp);
+		LCD_Goto(0,4);
+		sprintf(message, "P %06d", (int32_t)P);
+		OLED_string(message);
+		LCD_Goto(0,6);
+		sprintf(message, "T %04d", (int32_t)actual_temperature);
+		OLED_string(message);
 
 		HAL_GPIO_TogglePin(GPIOA, led0_Pin);
 		HAL_Delay(1000);

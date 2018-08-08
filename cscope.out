@@ -1,4 +1,4 @@
-cscope 15 $HOME/workspace/dive_comp_stm32f407_github               0004010669
+cscope 15 $HOME/workspace/dive_comp_stm32f407_github               0004017385
 	@Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
 
 50 #i‚de‡
@@ -336100,82 +336100,74 @@ ILI9163_H
 	)
 
 4 
-	~<°m32f0xx_gpio.h
->
+	~"°m32f4xx_hÆ.h
+"
 
 5 
-	~<°m32f0xx_•i.h
->
+	~"maö.h
+"
 
-6 
-	~<°m32f0xx_rcc.h
->
-
-7 
-	~<°rög.h
->
-
-9 
+7 
 	eWModesS
 {
 
-10 
+8 
 	mD©
 ,
 
-11 
+9 
 	mReg
 ,
 
-12 } 
+10 } 
 	tWModes
 ;
 
-14 
+12 
 	eSÀïModesS
 {
 
-15 
+13 
 	mSÀï
 ,
 
-16 
+14 
 	mAwake
 ,
 
-17 } 
+15 } 
 	tSÀïModes
 ;
 
-80 
+78 
 	eCﬁours16B
 {
 
-81 
+79 
 	mBœck
  = 0x0000,
 
-82 
+80 
 	mBlue
  = 0x001F,
 
-83 
+81 
 	mRed
  = 0xF800,
 
-84 
+82 
 	mGªí
  = 0x07E0,
 
-85 
+83 
 	mWhôe
  = 0xFFFF,
 
-86 } 
+84 } 
 	tCﬁours8
 ;
 
-88 
+86 
 	#BKGCﬁ
  
 Whôe
@@ -336183,7 +336175,7 @@ Whôe
 
 	)
 
-90 
+88 
 	#CSPö
  
 GPIO_Pö_0
@@ -336191,7 +336183,7 @@ GPIO_Pö_0
 
 	)
 
-91 
+89 
 	#ResPö
  
 GPIO_Pö_1
@@ -336199,7 +336191,7 @@ GPIO_Pö_1
 
 	)
 
-92 
+90 
 	#AOPö
  
 GPIO_Pö_2
@@ -336207,7 +336199,7 @@ GPIO_Pö_2
 
 	)
 
-93 
+91 
 	#D©Pö
  
 GPIO_Pö_7
@@ -336215,7 +336207,7 @@ GPIO_Pö_7
 
 	)
 
-94 
+92 
 	#ClkPö
  
 GPIO_Pö_5
@@ -336223,7 +336215,7 @@ GPIO_Pö_5
 
 	)
 
-95 
+93 
 	#VCCPö
  
 GPIO_Pö_11
@@ -336231,7 +336223,7 @@ GPIO_Pö_11
 
 	)
 
-96 
+94 
 	#BLPö
  
 GPIO_Pö_4
@@ -336239,7 +336231,7 @@ GPIO_Pö_4
 
 	)
 
-98 
+96 
 	#D©PS
  
 GPIO_PöSour˚7
@@ -336247,7 +336239,7 @@ GPIO_PöSour˚7
 
 	)
 
-99 
+97 
 	#ClkPS
  
 GPIO_PöSour˚5
@@ -336255,29 +336247,29 @@ GPIO_PöSour˚5
 
 	)
 
-101 
+99 
 	#XPix
  128
 
 	)
 
-102 
+100 
 	#YPix
  128
 
 	)
 
-104 
+102 
 Dñay
 (
 uöt32_t
 );
 
-106 
+104 
 ILI9163Inô
 ();
 
-108 
+106 
 uöt16_t
  
 EToS
@@ -336285,7 +336277,7 @@ EToS
 uöt8_t
 );
 
-110 
+108 
 SB
 (
 uöt8_t
@@ -336293,7 +336285,7 @@ uöt8_t
 WModes
 );
 
-111 
+109 
 SW
 (
 uöt16_t
@@ -336301,23 +336293,23 @@ uöt16_t
 WModes
 );
 
-113 
+111 
 SëAddr
 (
 uöt8_t
 , uint8_t, uint8_t, uint8_t);
 
-114 
+112 
 SëS¸n
 (
 Cﬁours8
 );
 
-115 
+113 
 CÃS¸n
 ();
 
-116 
+114 
 WrôePix
 (
 uöt16_t
@@ -336325,19 +336317,19 @@ uöt16_t
 Cﬁours8
 );
 
-117 
+115 
 PCﬁ
 (
 Cﬁours8
 );
 
-119 
+117 
 SÀïMode
 (
 uöt8_t
 );
 
-120 
+118 
 InvMode
 (
 uöt8_t
@@ -336598,6 +336590,42 @@ __LINE__
 	)
 
 89 #ifde‡
+__˝lu•lus
+
+
+	@Inc/oled.h
+
+41 #i‚de‡
+__MAIN_H__
+
+
+42 
+	#__MAIN_H__
+
+
+	)
+
+63 #ifde‡
+__˝lu•lus
+
+
+66 
+_Eº‹_H™dÀr
+(*, );
+
+68 
+	#Eº‹_H™dÀr
+(Ë
+	`_Eº‹_H™dÀr
+(
+__FILE__
+, 
+__LINE__
+)
+
+	)
+
+69 #ifde‡
 __˝lu•lus
 
 
@@ -376823,25 +376851,13 @@ MSec
 uöt32_t
  
 MS
-){
+)
 
-6 vﬁ©ûê
-uöt32_t
- 
-MSS
- = 
-MSec
-;
-
-7 (
-MSec
- - 
-MSS
-)<
+7 
+	`HAL_Dñay
+(
 MS
-Ë
-asm
- volatile ("nop");
+);
 
 8 
 	}
@@ -376855,41 +376871,113 @@ uöt16_t
 uöt8_t
  
 Cﬁ
-){
+)
 
-12 
+13 
 uöt16_t
  
 Temp
  = 0;
 
-20 
+21 
 Temp
  |(
 Cﬁ
 &3)<<3;
 
-21 
+22 
 Temp
  |((
 Cﬁ
 >>2)&3)<<9;
 
-22 
+23 
 Temp
  |((
 Cﬁ
 >>4)&3)<<14;
 
-24  
+25  
 Temp
 ;
 
-25 
+26 
 	}
 }
 
-27 
+28 
+uöt8_t
+ 
+	$wrôe_byã_ö_t·
+(
+uöt8_t
+ 
+d©a
+)
+
+31 
+uöt8_t
+ 
+d©a_out
+;
+
+32 
+uöt8_t
+ 
+ªad_d©a
+;
+
+35 (
+SPI3
+->
+SR
+ & 
+SPI_SR_TXE
+Ë=
+RESET
+ );
+
+36 
+d©a_out
+ = 
+d©a
+;
+
+37 
+SPI3
+->
+DR
+ = 
+d©a_out
+;
+
+39 (
+SPI3
+->
+SR
+ & 
+SPI_SR_RXNE
+Ë=
+RESET
+ );
+
+40 
+ªad_d©a
+ = 
+SPI3
+->
+DR
+;
+
+42  
+ªad_d©a
+;
+
+45 
+	}
+}
+
+47 
 	$SB
 (
 uöt8_t
@@ -376897,51 +376985,65 @@ uöt8_t
 D©a
 , uöt8_à
 DR
-){
+)
 
-28 if(
+49 if(
 DR
  =
 D©
-Ë
-	`GPIO_SëBôs
-(
-GPIOA
-, 
-AOPö
-);
+)
 
-29 
-	`GPIO_Re£tBôs
-(
-GPIOA
-, 
-AOPö
-);
+50 
+a0_t·_GPIO_P‹t
+->
+BSRR
+ = (
+uöt32_t
+)
+a0_t·_Pö
+ ;
 
-31 
-	`SPI_SídD©a8
+52 
+a0_t·_GPIO_P‹t
+->
+BSRR
+ = (
+uöt32_t
+)(
+a0_t·_Pö
+ << 16);
+
+55 
+•i3_cs_t·_GPIO_P‹t
+->
+BSRR
+ = (
+uöt32_t
+)(
+•i3_cs_t·_Pö
+ << 16);
+
+56 
+	`wrôe_byã_ö_t·
 (
-SPI1
-, 
 D©a
 );
 
-32 
-	`SPI_I2S_GëFœgSètus
-(
-SPI1
-, 
-SPI_I2S_FLAG_BSY
-Ë=
-SET
-);
+58 
+•i3_cs_t·_GPIO_P‹t
+->
+BSRR
+ = (
+uöt32_t
+)
+•i3_cs_t·_Pö
+ ;
 
-33 
+59 
 	}
 }
 
-35 
+61 
 	$SW
 (
 uöt16_t
@@ -376951,69 +377053,75 @@ D©a
 uöt8_t
  
 DR
-){
+)
 
-36 if(
+63 if(
 DR
  =
 D©
-Ë
-	`GPIO_SëBôs
-(
-GPIOA
-, 
-AOPö
-);
+)
 
-37 
-	`GPIO_Re£tBôs
-(
-GPIOA
-, 
-AOPö
-);
+64 
+a0_t·_GPIO_P‹t
+->
+BSRR
+ = (
+uöt32_t
+)
+a0_t·_Pö
+ ;
 
-39 
-	`SPI_SídD©a8
-(
-SPI1
-, 
+66 
+a0_t·_GPIO_P‹t
+->
+BSRR
+ = (
+uöt32_t
+)(
+a0_t·_Pö
+ << 16);
+
+69 
+•i3_cs_t·_GPIO_P‹t
+->
+BSRR
+ = (
+uöt32_t
+)(
+•i3_cs_t·_Pö
+ << 16);
+
+70 
+	`wrôe_byã_ö_t·
+((
+uöt8_t
+)(
 D©a
->>8);
+>>8));
 
-40 
-	`SPI_I2S_GëFœgSètus
-(
-SPI1
-, 
-SPI_I2S_FLAG_BSY
-Ë=
-SET
-);
-
-41 
-	`SPI_SídD©a8
-(
-SPI1
-, 
+71 
+	`wrôe_byã_ö_t·
+((
+uöt8_t
+)
 D©a
 );
 
-42 
-	`SPI_I2S_GëFœgSètus
-(
-SPI1
-, 
-SPI_I2S_FLAG_BSY
-Ë=
-SET
-);
+73 
+•i3_cs_t·_GPIO_P‹t
+->
+BSRR
+ = (
+uöt32_t
+)
+•i3_cs_t·_Pö
+ ;
 
-43 
+74 
 	}
 }
 
-45 
+76 
 	$SëAddr
 (
 uöt8_t
@@ -377025,21 +377133,21 @@ Y1
 X2
 , uöt8_à
 Y2
-){
+)
 
-46 
+78 
 	`SB
 (0x2A, 
 Reg
 );
 
-47 
+79 
 	`SB
 (0x00, 
 D©
 );
 
-48 
+80 
 	`SB
 (
 X1
@@ -377047,13 +377155,13 @@ X1
 D©
 );
 
-49 
+81 
 	`SB
 (0x00, 
 D©
 );
 
-50 
+82 
 	`SB
 (
 X2
@@ -377061,19 +377169,19 @@ X2
 D©
 );
 
-51 
+83 
 	`SB
 (0x2B, 
 Reg
 );
 
-52 
+84 
 	`SB
 (0x00, 
 D©
 );
 
-53 
+85 
 	`SB
 (32+
 Y1
@@ -377081,13 +377189,13 @@ Y1
 D©
 );
 
-54 
+86 
 	`SB
 (0x00, 
 D©
 );
 
-55 
+87 
 	`SB
 (32+
 Y2
@@ -377095,25 +377203,25 @@ Y2
 D©
 );
 
-57 
+89 
 	`SB
 (0x2C, 
 Reg
 );
 
-58 
+90 
 	}
 }
 
-60 
+92 
 	$SëS¸n
 (
 Cﬁours8
  
 Cﬁour
-){
+)
 
-61 
+94 
 uöt16_t
  
 XC¡
@@ -377121,7 +377229,7 @@ XC¡
 YC¡
 ;
 
-63 
+96 
 	`SëAddr
 (0, 0, 
 XPix
@@ -377129,19 +377237,19 @@ XPix
 YPix
 -1);
 
-65 
+98 
 XC¡
  = 0; XC¡<
 XPix
 ; XCnt++){
 
-66 
+99 
 YC¡
  = 0; YC¡<
 YPix
 ; YCnt++){
 
-67 
+100 
 	`SW
 (
 Cﬁour
@@ -377149,25 +377257,25 @@ Cﬁour
 D©
 );
 
-70 
+103 
 	}
 }
 
-72 
+105 
 	$CÃS¸n
-(){
+()
 
-73 
+107 
 	`SëS¸n
 (
 BKGCﬁ
 );
 
-74 
+108 
 	}
 }
 
-76 
+110 
 	$WrôePix
 (
 uöt16_t
@@ -377179,9 +377287,9 @@ Y
 Cﬁours8
  
 Cﬁour
-){
+)
 
-77 
+112 
 	`SëAddr
 (
 X
@@ -377189,7 +377297,7 @@ X
 Y
 , X, Y);
 
-79 
+114 
 	`SW
 (
 Cﬁour
@@ -377197,31 +377305,31 @@ Cﬁour
 D©
 );
 
-80 
+115 
 	}
 }
 
-82 
+117 
 	$PCﬁ
 (
 Cﬁours8
  
 Cﬁour
-){
+)
 
-111 
+147 
 	}
 }
 
-113 
+149 
 	$SÀïMode
 (
 uöt8_t
  
 Mode
-){
+)
 
-114 if(
+151 if(
 Mode
  =
 SÀï
@@ -377231,29 +377339,29 @@ SÀï
 Reg
 );
 
-115 
+152 
 	`SB
 (0x11, 
 Reg
 );
 
-116 
+153 
 	`Dñay
 (120);
 
-117 
+154 
 	}
 }
 
-119 
+156 
 	$InvMode
 (
 uöt8_t
  
 Mode
-){
+)
 
-120 if(
+158 if(
 Mode
 ==0Ë
 	`SB
@@ -377261,413 +377369,171 @@ Mode
 Reg
 );
 
-121 
+159 
 	`SB
 (0x21, 
 Reg
 );
 
-122 
+160 
 	}
 }
 
-124 
-GPIO_InôTy≥Def
- 
-	gG
-;
-
-125 
-SPI_InôTy≥Def
- 
-	gS
-;
-
-127 
+163 
 	$ILI9163Inô
 (){
 
-128 
-	`RCC_AHBPîùhClockCmd
-(
-RCC_AHBPîùh_GPIOA
-, 
-ENABLE
-);
-
-129 
-	`RCC_APB2PîùhClockCmd
-(
-RCC_APB2Pîùh_SPI1
-, 
-ENABLE
-);
-
-131 
-G
-.
-GPIO_Pö
- = 
-CSPö
- | 
-ResPö
- | 
-AOPö
- | 
-BLPö
- | 
-VCCPö
-;
-
-132 
-G
-.
-GPIO_Mode
- = 
-GPIO_Mode_OUT
-;
-
-133 
-G
-.
-GPIO_OTy≥
- = 
-GPIO_OTy≥_PP
-;
-
-134 
-G
-.
-GPIO_PuPd
- = 
-GPIO_PuPd_NOPULL
-;
-
-135 
-G
-.
-GPIO_S≥ed
- = 
-GPIO_S≥ed_10MHz
-;
-
-136 
-	`GPIO_Inô
-(
-GPIOA
-, &
-G
-);
-
-138 
-G
-.
-GPIO_Pö
- = 
-D©Pö
- | 
-ClkPö
-;
-
-139 
-G
-.
-GPIO_Mode
- = 
-GPIO_Mode_AF
-;
-
-140 
-	`GPIO_Inô
-(
-GPIOA
-, &
-G
-);
-
-142 
-	`GPIO_PöAFC⁄fig
-(
-GPIOA
-, 
-D©PS
-, 
-GPIO_AF_0
-);
-
-143 
-	`GPIO_PöAFC⁄fig
-(
-GPIOA
-, 
-ClkPS
-, 
-GPIO_AF_0
-);
-
-145 
-S
-.
-SPI_BaudR©ePªsˇÀr
- = 
-SPI_BaudR©ePªsˇÀr_2
-;
-
-146 
-S
-.
-SPI_CPHA
- = 
-SPI_CPHA_1Edge
-;
-
-147 
-S
-.
-SPI_CPOL
- = 
-SPI_CPOL_Low
-;
-
-148 
-S
-.
-SPI_D©aSize
- = 
-SPI_D©aSize_8b
-;
-
-149 
-S
-.
-SPI_Fú°Bô
- = 
-SPI_Fú°Bô_MSB
-;
-
-150 
-S
-.
-SPI_Mode
- = 
-SPI_Mode_Ma°î
-;
-
-151 
-S
-.
-SPI_NSS
- = 
-SPI_NSS_So·
-;
-
-152 
-	`SPI_Inô
-(
-SPI1
-, &
-S
-);
-
-153 
-	`SPI_Cmd
-(
-SPI1
-, 
-ENABLE
-);
-
-155 
-	`GPIO_Re£tBôs
-(
-GPIOA
-, 
-ResPö
-);
-
-156 
-	`Dñay
-(20);
-
-157 
-	`GPIO_SëBôs
-(
-GPIOA
-, 
-ResPö
-);
-
-158 
-	`Dñay
-(20);
-
-159 
-	`GPIO_Re£tBôs
-(
-GPIOA
-, 
-CSPö
-);
-
-160 
-	`GPIO_SëBôs
-(
-GPIOA
-, 
-BLPö
-);
-
-241 
+256 
 	`SB
 (0x01, 
 Reg
 );
 
-242 
+257 
 	`SB
 (0x11, 
 Reg
 );
 
-243 
+258 
 	`Dñay
 (20);
 
-245 
+260 
 	`SB
 (0x26, 
 Reg
 );
 
-246 
+261 
 	`SB
 (0x04, 
 D©
 );
 
-248 
+263 
 	`SB
 (0xC0, 
 Reg
 );
 
-249 
+264 
 	`SB
 (0x1F, 
 D©
 );
 
-251 
+266 
 	`SB
 (0xC1, 
 Reg
 );
 
-252 
+267 
 	`SB
 (0x00, 
 D©
 );
 
-254 
+269 
 	`SB
 (0xC2, 
 Reg
 );
 
-255 
+270 
 	`SB
 (0x00, 
 D©
 );
 
-256 
+271 
 	`SB
 (0x07, 
 D©
 );
 
-258 
+273 
 	`SB
 (0xC3, 
 Reg
 );
 
-259 
+274 
 	`SB
 (0x00, 
 D©
 );
 
-260 
+275 
 	`SB
 (0x07, 
 D©
 );
 
-262 
+277 
 	`SB
 (0xC5, 
 Reg
 );
 
-263 
+278 
 	`SB
 (0x24, 
 D©
 );
 
-264 
+279 
 	`SB
 (0xC8, 
 D©
 );
 
-266 
+281 
 	`SB
 (0x38, 
 Reg
 );
 
-269 
+284 
 	`SB
 (0x3A, 
 Reg
 );
 
-270 
+285 
 	`SB
 (0x05, 
 D©
 );
 
-272 
+287 
 	`SB
 (0x36, 
 Reg
 );
 
-273 
+288 
 	`SB
 (0x08, 
 D©
 );
 
-275 
+290 
 	`SB
 (0x29, 
 Reg
 );
 
-277 
+292 
 	`InvMode
 (0);
 
-278 
+293 
 	`CÃS¸n
 ();
 
-279 
+294 
 	}
 }
 
@@ -378235,71 +378101,81 @@ GPIO_PIN_7
 	~"gpio.h
 "
 
-49 
+49 
+	~<GFXC.h
+>
+
+51 
 	#DEG_2_8
  256.0
 
 	)
 
-50 
+52 
 	#DEG_2_23
  8388608.0
 
 	)
 
-51 
+53 
 	#DEG_2_18
  262144.0
 
 	)
 
-52 
+54 
 	#DEG_2_5
  32.0
 
 	)
 
-53 
+55 
 	#DEG_2_17
  131072.0
 
 	)
 
-54 
+56 
 	#DEG_2_7
  128.0
 
 	)
 
-55 
+57 
 	#DEG_2_21
  2097152.0
 
 	)
 
-56 
+58 
 	#DEG_2_15
  32768.0
 
 	)
 
-57 
+59 
 	#DEG_2_33
  8589934592.0
 
 	)
 
-59 
+61 
 	#PRESSURE_OVERSAMPLING
  100
 
 	)
 
-67 
+64 
+TextP¨amSåu˘
+ 
+	gTS
+;
+
+70 
 Sy°emClock_C⁄fig
 ();
 
-71 
+74 
 uöt8_t
  
 	$wrôe_byã
@@ -378309,19 +378185,19 @@ uöt8_t
 d©a
 )
 
-74 
+77 
 uöt8_t
  
 d©a_out
 ;
 
-75 
+78 
 uöt8_t
  
 ªad_d©a
 ;
 
-78 (
+81 (
 SPI2
 ->
 SR
@@ -378331,13 +378207,13 @@ SPI_SR_TXE
 RESET
  );
 
-79 
+82 
 d©a_out
  = 
 d©a
 ;
 
-80 
+83 
 SPI2
 ->
 DR
@@ -378345,7 +378221,7 @@ DR
 d©a_out
 ;
 
-82 (
+85 (
 SPI2
 ->
 SR
@@ -378355,7 +378231,7 @@ SPI_SR_RXNE
 RESET
  );
 
-83 
+86 
 ªad_d©a
  = 
 SPI2
@@ -378363,19 +378239,19 @@ SPI2
 DR
 ;
 
-85  
+88  
 ªad_d©a
 ;
 
-88 
+91 
 	}
 }
 
-101 
+104 
 	$maö
 ()
 
-104 
+107 
 i
 ,
 j
@@ -378383,43 +378259,43 @@ j
 k
 ;
 
-106 
+109 
 mesßge
 [256];
 
-107 
+110 
 time°amp
 [64];
 
-109 
+112 
 RTC_TimeTy≥Def
  
 sTime
 ;
 
-110 
+113 
 RTC_D©eTy≥Def
  
 sD©e
 ;
 
-113 
+116 
 	`HAL_Inô
 ();
 
-116 
+119 
 	`Sy°emClock_C⁄fig
 ();
 
-119 
+122 
 	`MX_GPIO_Inô
 ();
 
-120 
+123 
 	`MX_SPI2_Inô
 ();
 
-122 
+125 
 SPI2
 ->
 CR1
@@ -378427,51 +378303,51 @@ CR1
 SPI_CR1_SPE
 ;
 
-123 
+126 
 	`MX_I2C1_Inô
 ();
 
-124 
+127 
 	`MX_USART1_UART_Inô
 ();
 
-125 
+128 
 	`MX_SPI3_Inô
 ();
 
-127 
-SPI2
+130 
+SPI3
 ->
 CR1
  |
 SPI_CR1_SPE
 ;
 
-128 
+131 
 	`MX_RTC_Inô
 ();
 
-129 
+132 
 	`MX_TIM1_Inô
 ();
 
-130 
+133 
 	`MX_TIM2_Inô
 ();
 
-131 
+134 
 	`MX_TIM3_Inô
 ();
 
-132 
+135 
 	`MX_TIM4_Inô
 ();
 
-133 
+136 
 	`MX_USART2_UART_Inô
 ();
 
-135 
+138 
 	`HAL_GPIO_WrôePö
 (
 GPIOA
@@ -378481,7 +378357,7 @@ GPIOA
 GPIO_PIN_RESET
 );
 
-136 
+139 
 	`HAL_GPIO_WrôePö
 (
 Àd_t·_GPIO_P‹t
@@ -378491,7 +378367,7 @@ GPIO_PIN_RESET
 GPIO_PIN_SET
 );
 
-137 
+140 
 	`HAL_GPIO_WrôePö
 (
 ª£t_t·_GPIO_P‹t
@@ -378502,30 +378378,86 @@ GPIO_PIN_SET
 );
 
 142 
+	`ILI9163Inô
+();
+
+143 
+	`CÃS¸n
+();
+
+144 
+TS
+.
+Size
+ = 1;
+
+145 
+TS
+.
+F⁄t
+ = 
+StdF⁄t
+;
+
+146 
+TS
+.
+XPos
+ = 0;
+
+147 
+TS
+.
+YPos
+ = 0;
+
+148 
+TS
+.
+TxtCﬁ
+ = 
+Blue
+;
+
+149 
+TS
+.
+BkgCﬁ
+ = 
+Bœck
+;
+
+151 
+	`PSå
+("Hñlo!", &
+TS
+);
+
+155 
 uöt8_t
  
 •i2_out_d©a_buf„r
 [128];
 
-143 
+156 
 uöt8_t
  
 •i2_ö_d©a_buf„r
 [128];
 
-145 
+158 
 uöt8_t
  
 d©a_out
 ;
 
-146 
+159 
 uöt8_t
  
 ªad_d©a
 ;
 
-153 
+166 
 •i2_cs_¥essuª_GPIO_P‹t
 ->
 BSRR
@@ -378535,11 +378467,11 @@ uöt32_t
 •i2_cs_¥essuª_Pö
  << 16);
 
-155 
+168 
 	`wrôe_byã
 ( 0x1e);
 
-157 
+170 
 •i2_cs_¥essuª_GPIO_P‹t
 ->
 BSRR
@@ -378549,21 +378481,21 @@ uöt32_t
 •i2_cs_¥essuª_Pö
  ;
 
-158 
+171 
 	`HAL_Dñay
 (3);
 
-161 
+174 
 uöt16_t
  
 £ns‹_¥om
 [7];
 
-163 
+176 
 i
 =1; i<7; i++)
 
-167 
+180 
 •i2_cs_¥essuª_GPIO_P‹t
 ->
 BSRR
@@ -378573,7 +378505,7 @@ uöt32_t
 •i2_cs_¥essuª_Pö
  << 16);
 
-169 
+182 
 	`wrôe_byã
 –0xa0 + (((
 uöt8_t
@@ -378581,7 +378513,7 @@ uöt8_t
 i
 )<<1));
 
-172 
+185 
 £ns‹_¥om
 [
 i
@@ -378589,13 +378521,13 @@ i
 	`wrôe_byã
 (0x55);
 
-173 
+186 
 £ns‹_¥om
 [
 i
 ] <<= 8;
 
-175 
+188 
 £ns‹_¥om
 [
 i
@@ -378603,7 +378535,7 @@ i
 	`wrôe_byã
 (0x55);
 
-178 
+191 
 •i2_cs_¥essuª_GPIO_P‹t
 ->
 BSRR
@@ -378613,55 +378545,55 @@ uöt32_t
 •i2_cs_¥essuª_Pö
  ;
 
-182 
+195 
 uöt32_t
  
 ¥essuª
 ;
 
-183 
+196 
 uöt32_t
  
 ãm≥øtuª
 ;
 
-184 
+197 
 dT
 ;
 
-185 
+198 
 a˘uÆ_ãm≥øtuª
 ;
 
-186 
+199 
 OFF
 ;
 
-187 
+200 
 SENS
 ;
 
-188 
+201 
 P
 ;
 
-190 
+203 
 	`HAL_Dñay
 (1000);
 
-196 
+209 
 uöt32_t
  
 aux_p
  = 0;
 
-198 
+211 
 i
 =0; i<
 PRESSURE_OVERSAMPLING
 ; i++)
 
-203 
+216 
 •i2_cs_¥essuª_GPIO_P‹t
 ->
 BSRR
@@ -378671,11 +378603,11 @@ uöt32_t
 •i2_cs_¥essuª_Pö
  << 16);
 
-205 
+218 
 	`wrôe_byã
 (0x44);
 
-207 
+220 
 •i2_cs_¥essuª_GPIO_P‹t
 ->
 BSRR
@@ -378685,49 +378617,9 @@ uöt32_t
 •i2_cs_¥essuª_Pö
  ;
 
-209 
+222 
 	`HAL_Dñay
 (3);
-
-213 
-•i2_cs_¥essuª_GPIO_P‹t
-->
-BSRR
- = (
-uöt32_t
-)(
-•i2_cs_¥essuª_Pö
- << 16);
-
-215 
-	`wrôe_byã
-(0x00);
-
-218 
-¥essuª
- = 
-	`wrôe_byã
-(0x55);
-
-219 
-¥essuª
- <<= 8;
-
-221 
-¥essuª
- +
-	`wrôe_byã
-(0x55);
-
-222 
-¥essuª
- <<= 8;
-
-224 
-¥essuª
- +
-	`wrôe_byã
-(0x55);
 
 226 
 •i2_cs_¥essuª_GPIO_P‹t
@@ -378735,17 +378627,57 @@ uöt32_t
 BSRR
  = (
 uöt32_t
+)(
+•i2_cs_¥essuª_Pö
+ << 16);
+
+228 
+	`wrôe_byã
+(0x00);
+
+231 
+¥essuª
+ = 
+	`wrôe_byã
+(0x55);
+
+232 
+¥essuª
+ <<= 8;
+
+234 
+¥essuª
+ +
+	`wrôe_byã
+(0x55);
+
+235 
+¥essuª
+ <<= 8;
+
+237 
+¥essuª
+ +
+	`wrôe_byã
+(0x55);
+
+239 
+•i2_cs_¥essuª_GPIO_P‹t
+->
+BSRR
+ = (
+uöt32_t
 )
 •i2_cs_¥essuª_Pö
  ;
 
-228 
+241 
 aux_p
  +
 ¥essuª
 ;
 
-232 
+245 
 ¥essuª
  = 
 aux_p
@@ -378753,7 +378685,7 @@ aux_p
 PRESSURE_OVERSAMPLING
 ;
 
-238 
+251 
 •i2_cs_¥essuª_GPIO_P‹t
 ->
 BSRR
@@ -378763,11 +378695,11 @@ uöt32_t
 •i2_cs_¥essuª_Pö
  << 16);
 
-240 
+253 
 	`wrôe_byã
 (0x54);
 
-242 
+255 
 •i2_cs_¥essuª_GPIO_P‹t
 ->
 BSRR
@@ -378777,49 +378709,9 @@ uöt32_t
 •i2_cs_¥essuª_Pö
  ;
 
-244 
+257 
 	`HAL_Dñay
 (3);
-
-248 
-•i2_cs_¥essuª_GPIO_P‹t
-->
-BSRR
- = (
-uöt32_t
-)(
-•i2_cs_¥essuª_Pö
- << 16);
-
-250 
-	`wrôe_byã
-(0x00);
-
-253 
-ãm≥øtuª
- = 
-	`wrôe_byã
-(0x55);
-
-254 
-ãm≥øtuª
- <<= 8;
-
-256 
-ãm≥øtuª
- +
-	`wrôe_byã
-(0x55);
-
-257 
-ãm≥øtuª
- <<= 8;
-
-259 
-ãm≥øtuª
- +
-	`wrôe_byã
-(0x55);
 
 261 
 •i2_cs_¥essuª_GPIO_P‹t
@@ -378827,11 +378719,51 @@ uöt32_t
 BSRR
  = (
 uöt32_t
+)(
+•i2_cs_¥essuª_Pö
+ << 16);
+
+263 
+	`wrôe_byã
+(0x00);
+
+266 
+ãm≥øtuª
+ = 
+	`wrôe_byã
+(0x55);
+
+267 
+ãm≥øtuª
+ <<= 8;
+
+269 
+ãm≥øtuª
+ +
+	`wrôe_byã
+(0x55);
+
+270 
+ãm≥øtuª
+ <<= 8;
+
+272 
+ãm≥øtuª
+ +
+	`wrôe_byã
+(0x55);
+
+274 
+•i2_cs_¥essuª_GPIO_P‹t
+->
+BSRR
+ = (
+uöt32_t
 )
 •i2_cs_¥essuª_Pö
  ;
 
-265 
+278 
 dT
  = ()
 ãm≥øtuª
@@ -378841,7 +378773,7 @@ dT
 DEG_2_8
 ;
 
-266 
+279 
 a˘uÆ_ãm≥øtuª
  = 2000 + (
 dT
@@ -378851,7 +378783,7 @@ dT
 DEG_2_23
 ;
 
-268 
+281 
 OFF
  = (()
 £ns‹_¥om
@@ -378863,7 +378795,7 @@ dT
 DEG_2_5
 ;
 
-269 
+282 
 SENS
  = (()
 £ns‹_¥om
@@ -378875,35 +378807,35 @@ dT
 DEG_2_7
 ;
 
-272 
+285 
 T2
 ;
 
-273 
+286 
 SENS2
 ;
 
-274 
+287 
 OFF2
 ;
 
-277 if(
+290 if(
 a˘uÆ_ãm≥øtuª
  >= 2000)
 
-279 
+292 
 T2
  = 0;
 
-280 
+293 
 SENS2
  = 0;
 
-281 
+294 
 OFF2
  = 0;
 
-285 
+298 
 T2
  = 3.0 * 
 dT
@@ -378911,59 +378843,59 @@ dT
 DEG_2_33
 ;
 
-286 
+299 
 aux_dt
  = (
 a˘uÆ_ãm≥øtuª
  - 2000);
 
-287 
+300 
 OFF2
  = 3.0 * 
 aux_dt
  *áux_dt / 8.0;
 
-288 
+301 
 SENS2
  = 7.0 * 
 aux_dt
  *áux_dt / 8.0;
 
-290 if(
+303 if(
 a˘uÆ_ãm≥øtuª
  < -1500)
 
-292 
+305 
 aux_dt
  = 
 a˘uÆ_ãm≥øtuª
  + 1500;
 
-293 
+306 
 SENS2
  = SENS2 + 3.0 * 
 aux_dt
  *áux_dt;
 
-297 
+310 
 a˘uÆ_ãm≥øtuª
  =á˘uÆ_ãm≥øtuª - 
 T2
 ;
 
-299 
+312 
 OFF
  = OFF - 
 OFF2
 ;
 
-300 
+313 
 SENS
  = SENS - 
 SENS2
 ;
 
-302 
+315 
 P
  = ((()
 ¥essuª
@@ -378977,7 +378909,7 @@ OFF
 DEG_2_15
 ;
 
-305 
+318 
 	`HAL_RTC_GëTime
 (&
 hπc
@@ -378987,7 +378919,7 @@ sTime
 RTC_FORMAT_BCD
 );
 
-306 
+319 
 	`HAL_RTC_GëD©e
 (&
 hπc
@@ -378997,7 +378929,7 @@ sD©e
 RTC_FORMAT_BCD
 );
 
-308 
+321 
 	`•rötf
 (
 time°amp
@@ -379019,7 +378951,7 @@ Möuãs
 Sec⁄ds
 );
 
-309 
+322 
 	`HAL_UART_Tønsmô
 (&
 hu¨t1
@@ -379029,7 +378961,7 @@ time°amp
 	`°æí
 ((const *)timestamp), 500);
 
-312 
+325 
 	`•rötf
 (
 mesßge
@@ -379041,7 +378973,7 @@ P
 a˘uÆ_ãm≥øtuª
 );
 
-314 
+327 
 	`HAL_UART_Tønsmô
 (&
 hu¨t1
@@ -379051,7 +378983,7 @@ mesßge
 	`°æí
 ((const *)message), 500);
 
-318 
+331 
 	`HAL_GPIO_ToggÀPö
 (
 GPIOA
@@ -379059,47 +378991,47 @@ GPIOA
 Àd0_Pö
 );
 
-319 
+332 
 	`HAL_Dñay
 (1000);
 
-342 
+355 
 	}
 }
 
-355 
+368 
 	$Sy°emClock_C⁄fig
 ()
 
-358 
+371 
 RCC_OscInôTy≥Def
  
 RCC_OscInôSåu˘
 ;
 
-359 
+372 
 RCC_ClkInôTy≥Def
  
 RCC_ClkInôSåu˘
 ;
 
-360 
+373 
 RCC_PîùhCLKInôTy≥Def
  
 PîùhClkInôSåu˘
 ;
 
-364 
+377 
 	`__HAL_RCC_PWR_CLK_ENABLE
 ();
 
-366 
+379 
 	`__HAL_PWR_VOLTAGESCALING_CONFIG
 (
 PWR_REGULATOR_VOLTAGE_SCALE1
 );
 
-370 
+383 
 RCC_OscInôSåu˘
 .
 Oscûœt‹Ty≥
@@ -379109,7 +379041,7 @@ RCC_OSCILLATORTYPE_HSE
 RCC_OSCILLATORTYPE_LSE
 ;
 
-371 
+384 
 RCC_OscInôSåu˘
 .
 HSESèã
@@ -379117,7 +379049,7 @@ HSESèã
 RCC_HSE_ON
 ;
 
-372 
+385 
 RCC_OscInôSåu˘
 .
 LSESèã
@@ -379125,7 +379057,7 @@ LSESèã
 RCC_LSE_ON
 ;
 
-373 
+386 
 RCC_OscInôSåu˘
 .
 PLL
@@ -379135,7 +379067,7 @@ PLLSèã
 RCC_PLL_ON
 ;
 
-374 
+387 
 RCC_OscInôSåu˘
 .
 PLL
@@ -379145,7 +379077,7 @@ PLLSour˚
 RCC_PLLSOURCE_HSE
 ;
 
-375 
+388 
 RCC_OscInôSåu˘
 .
 PLL
@@ -379153,7 +379085,7 @@ PLL
 PLLM
  = 8;
 
-376 
+389 
 RCC_OscInôSåu˘
 .
 PLL
@@ -379161,7 +379093,7 @@ PLL
 PLLN
  = 336;
 
-377 
+390 
 RCC_OscInôSåu˘
 .
 PLL
@@ -379171,7 +379103,7 @@ PLLP
 RCC_PLLP_DIV2
 ;
 
-378 
+391 
 RCC_OscInôSåu˘
 .
 PLL
@@ -379179,7 +379111,7 @@ PLL
 PLLQ
  = 4;
 
-379 i‡(
+392 i‡(
 	`HAL_RCC_OscC⁄fig
 (&
 RCC_OscInôSåu˘
@@ -379187,7 +379119,7 @@ RCC_OscInôSåu˘
 HAL_OK
 )
 
-381 
+394 
 	`_Eº‹_H™dÀr
 (
 __FILE__
@@ -379195,7 +379127,7 @@ __FILE__
 __LINE__
 );
 
-386 
+399 
 RCC_ClkInôSåu˘
 .
 ClockTy≥
@@ -379205,13 +379137,13 @@ RCC_CLOCKTYPE_HCLK
 RCC_CLOCKTYPE_SYSCLK
 
 
-387 |
+400 |
 RCC_CLOCKTYPE_PCLK1
 |
 RCC_CLOCKTYPE_PCLK2
 ;
 
-388 
+401 
 RCC_ClkInôSåu˘
 .
 SYSCLKSour˚
@@ -379219,7 +379151,7 @@ SYSCLKSour˚
 RCC_SYSCLKSOURCE_PLLCLK
 ;
 
-389 
+402 
 RCC_ClkInôSåu˘
 .
 AHBCLKDividî
@@ -379227,7 +379159,7 @@ AHBCLKDividî
 RCC_SYSCLK_DIV1
 ;
 
-390 
+403 
 RCC_ClkInôSåu˘
 .
 APB1CLKDividî
@@ -379235,7 +379167,7 @@ APB1CLKDividî
 RCC_HCLK_DIV4
 ;
 
-391 
+404 
 RCC_ClkInôSåu˘
 .
 APB2CLKDividî
@@ -379243,7 +379175,7 @@ APB2CLKDividî
 RCC_HCLK_DIV2
 ;
 
-393 i‡(
+406 i‡(
 	`HAL_RCC_ClockC⁄fig
 (&
 RCC_ClkInôSåu˘
@@ -379253,7 +379185,7 @@ FLASH_LATENCY_5
 HAL_OK
 )
 
-395 
+408 
 	`_Eº‹_H™dÀr
 (
 __FILE__
@@ -379261,7 +379193,7 @@ __FILE__
 __LINE__
 );
 
-398 
+411 
 PîùhClkInôSåu˘
 .
 PîùhClockSñe˘i⁄
@@ -379269,7 +379201,7 @@ PîùhClockSñe˘i⁄
 RCC_PERIPHCLK_RTC
 ;
 
-399 
+412 
 PîùhClkInôSåu˘
 .
 RTCClockSñe˘i⁄
@@ -379277,7 +379209,7 @@ RTCClockSñe˘i⁄
 RCC_RTCCLKSOURCE_LSE
 ;
 
-400 i‡(
+413 i‡(
 	`HAL_RCCEx_PîùhCLKC⁄fig
 (&
 PîùhClkInôSåu˘
@@ -379285,7 +379217,7 @@ PîùhClkInôSåu˘
 HAL_OK
 )
 
-402 
+415 
 	`_Eº‹_H™dÀr
 (
 __FILE__
@@ -379293,29 +379225,29 @@ __FILE__
 __LINE__
 );
 
-407 
+420 
 	`HAL_SYSTICK_C⁄fig
 (
 	`HAL_RCC_GëHCLKFªq
 ()/1000);
 
-411 
+424 
 	`HAL_SYSTICK_CLKSour˚C⁄fig
 (
 SYSTICK_CLKSOURCE_HCLK
 );
 
-414 
+427 
 	`HAL_NVIC_SëPri‹ôy
 (
 SysTick_IRQn
 , 0, 0);
 
-415 
+428 
 	}
 }
 
-427 
+440 
 	$_Eº‹_H™dÀr
 (*
 fûe
@@ -379323,15 +379255,15 @@ fûe
 löe
 )
 
-435 
+448 
 	}
 }
 
-437 #ifde‡ 
+450 #ifde‡ 
 USE_FULL_ASSERT
 
 
-445 
+458 
 	$as£π_Áûed
 (
 uöt8_t
@@ -379343,7 +379275,1233 @@ uöt32_t
 löe
 )
 
+464 
+	}
+}
+
+	@Src/oled.c
+
+2 
+	~"ﬁed.h
+"
+
+3 
+	~"i2c.h
+"
+
+5 
+	~"gpio.h
+"
+
+12 
+I2C_H™dÀTy≥Def
+ 
+	ghi2c1
+;
+
+17 
+	#OLED_adªss
+ 0x78
+
+	)
+
+18 
+	#OLED_SETCONTRAST
+ 0x81
+
+	)
+
+19 
+	#OLED_DISPLAYALLON_RESUME
+ 0xA4
+
+	)
+
+20 
+	#OLED_DISPLAYALLON
+ 0xA5
+
+	)
+
+21 
+	#OLED_NORMALDISPLAY
+ 0xA6
+
+	)
+
+22 
+	#OLED_INVERTDISPLAY
+ 0xA7
+
+	)
+
+23 
+	#OLED_DISPLAYOFF
+ 0xAE
+
+	)
+
+24 
+	#OLED_DISPLAYON
+ 0xAF
+
+	)
+
+25 
+	#OLED_SETDISPLAYOFFSET
+ 0xD3
+
+	)
+
+26 
+	#OLED_SETCOMPINS
+ 0xDA
+
+	)
+
+27 
+	#OLED_SETVCOMDETECT
+ 0xDB
+
+	)
+
+28 
+	#OLED_SETDISPLAYCLOCKDIV
+ 0xD5
+
+	)
+
+29 
+	#OLED_SETPRECHARGE
+ 0xD9
+
+	)
+
+30 
+	#OLED_SETMULTIPLEX
+ 0xA8
+
+	)
+
+31 
+	#OLED_SETLOWCOLUMN
+ 0x00
+
+	)
+
+32 
+	#OLED_SETHIGHCOLUMN
+ 0x10
+
+	)
+
+33 
+	#OLED_SETSTARTLINE
+ 0x40
+
+	)
+
+34 
+	#OLED_MEMORYMODE
+ 0x20
+
+	)
+
+35 
+	#OLED_COLUMNADDR
+ 0x21
+
+	)
+
+36 
+	#OLED_PAGEADDR
+ 0x22
+
+	)
+
+37 
+	#OLED_COMSCANINC
+ 0xC0
+
+	)
+
+38 
+	#OLED_COMSCANDEC
+ 0xC8
+
+	)
+
+39 
+	#OLED_SEGREMAP
+ 0xA0
+
+	)
+
+40 
+	#OLED_CHARGEPUMP
+ 0x8D
+
+	)
+
+41 
+	#OLED_SWITCHCAPVCC
+ 0x2
+
+	)
+
+42 
+	#OLED_NOP
+ 0xE3
+
+	)
+
+44 
+	#OLED_WIDTH
+ 128
+
+	)
+
+45 
+	#OLED_HEIGHT
+ 64
+
+	)
+
+46 
+	#OLED_BUFFERSIZE
+ (
+OLED_WIDTH
+*
+OLED_HEIGHT
+)/8
+
+	)
+
+47 
+	#OLED_DEFAULT_SPACE
+ 5
+
+	)
+
+49 
+	#COMAND
+ 0x00
+
+	)
+
+50 
+	#DATA
+ 0x40
+
+	)
+
+51 
+uöt16_t
+ 
+	ggg
+;
+
+52 
+uöt8_t
+ 
+	gãmp
+[2] = {0,0};
+
+53 
+uöt8_t
+ 
+	gãmp_ch¨
+[7] = {0,0,0,0,0,0,0};
+
+54 
+	gLCD_X
+,
+	gLCD_Y
+;
+
+55 
+	gLCD_Buf„r
+[0x0500] =
+
+318 
+Sy°emClock_C⁄fig
+();
+
+319 
+MX_GPIO_Inô
+();
+
+320 
+MX_I2C1_Inô
+();
+
+325 
+i2c_öô
+();
+
+326 
+OLED_öô
+();
+
+328 
+£ndComm™d
+(
+comm™d
+);
+
+329 
+LCD_CÀ¨
+();
+
+330 
+LCD_Ch¨
+(
+c
+);
+
+331 
+LCD_GŸo
+(
+x
+, 
+y
+);
+
+332 
+LCD_DøwImage
+(
+num_image
+);
+
+333 
+OLED_°rög
+(*
+°rög
+);
+
+334 
+OLED_num_to_°r
+(
+vÆue
+, 
+nDigô
+);
+
+337 
+	$£ndComm™d
+(
+uöt8_t
+ 
+comm™d_s
+)
+
+339 
+ãmp
+[0] = 
+COMAND
+;
+
+340 
+ãmp
+[1] = 
+comm™d_s
+;
+
+341 
+	`HAL_I2C_Ma°î_Tønsmô
+(&
+hi2c1
+,
+OLED_adªss
+,
+ãmp
+,2,100);
+
+342 
+	}
+}
+
+344 
+	$£ndD©a
+(
+uöt8_t
+ 
+d©a_s
+)
+
+346 
+ãmp
+[0] = 
+DATA
+;
+
+347 
+ãmp
+[1] = 
+d©a_s
+;
+
+348 
+	`HAL_I2C_Ma°î_Tønsmô
+(&
+hi2c1
+,
+OLED_adªss
+,
+ãmp
+,2,100);
+
+349 
+	}
+}
+
+351 
+	$LCD_GŸo
+(
+x
+, 
+y
+)
+
+353 
+LCD_X
+ = 
+x
+;
+
+354 
+LCD_Y
+ = 
+y
+;
+
+355 
+	`£ndComm™d
+(0xB0 + 
+y
+);
+
+356 
+	`£ndComm™d
+(
+x
+ & 0xf);
+
+357 
+	`£ndComm™d
+(0x10 | (
+x
+ >> 4));
+
+358 
+	}
+}
+
+361 
+	$LCD_CÀ¨
+()
+
+363 
+i
+;
+
+364 
+x
+=0;
+
+365 
+y
+=0;
+
+366 
+	`LCD_GŸo
+(0,0);
+
+368 
+i
+=0; i<(
+OLED_BUFFERSIZE
+); i++)
+
+370 
+	`LCD_Ch¨
+(' ');
+
+371 
+x
+ ++;
+
+372 if(
+x
+>
+OLED_WIDTH
+)
+
+374 
+x
+ =0;
+
+375 
+y
+++;
+
+376 
+	`LCD_GŸo
+(0,
+y
+);
+
+379 
+LCD_X
+ =
+OLED_DEFAULT_SPACE
+;
+
+380 
+LCD_Y
+ =0;
+
+381 
+	}
+}
+
+383 
+	$LCD_Ch¨
+(
+c
+)
+
+385 
+x
+ = 0;
+
+386 
+ãmp_ch¨
+[0] = 0x40;
+
+387 
+x
+=0; x<5; x++)
+
+389 
+ãmp_ch¨
+[
+x
++1] = 
+LCD_Buf„r
+[
+c
+*5+x];
+
+391 
+ãmp_ch¨
+[6] = 0;
+
+392 
+	`HAL_I2C_Ma°î_Tønsmô
+(&
+hi2c1
+, 
+OLED_adªss
+, 
+ãmp_ch¨
+, 7,1000);
+
+394 
+LCD_X
+ += 8;
+
+395 if(
+LCD_X
+>
+OLED_WIDTH
+)
+
+397 
+LCD_X
+ = 
+OLED_DEFAULT_SPACE
+;
+
+399 
+	}
+}
+
+402 
+	$OLED_°rög
+(*
+°rög
+)
+
+404 *
+°rög
+ != '\0')
+
+406 
+	`LCD_Ch¨
+(*
+°rög
+);
+
+407 
+°rög
+++;
+
+409 
+	}
+}
+
+411 
+	$OLED_num_to_°r
+(
+vÆue
+, 
+nDigô
+)
+
+413 
+nDigô
+)
+
+415 5: 
+	`LCD_Ch¨
+(
+vÆue
+/10000+48);
+
+416 4: 
+	`LCD_Ch¨
+((
+vÆue
+/1000)%10+48);
+
+417 3: 
+	`LCD_Ch¨
+((
+vÆue
+/100)%10+48);
+
+418 2: 
+	`LCD_Ch¨
+((
+vÆue
+/10)%10+48);
+
+419 1: 
+	`LCD_Ch¨
+(
+vÆue
+%10+48);
+
+421 
+	}
+}
+
+424 
+	$OLED_öô
+()
+
+427 
+	`£ndComm™d
+(
+OLED_DISPLAYOFF
+);
+
+429 
+	`£ndComm™d
+(
+OLED_SETDISPLAYCLOCKDIV
+);
+
+430 
+	`£ndComm™d
+(0x80);
+
+432 
+	`£ndComm™d
+(
+OLED_SETMULTIPLEX
+);
+
+434 
+	`£ndComm™d
+(0x3F);
+
+436 
+	`£ndComm™d
+(
+OLED_SETDISPLAYOFFSET
+);
+
+437 
+	`£ndComm™d
+(0x00);
+
+439 
+	`£ndComm™d
+(
+OLED_SETSTARTLINE
+ | 0x00);
+
+442 
+	`£ndComm™d
+(
+OLED_CHARGEPUMP
+);
+
+443 
+	`£ndComm™d
+(0x14);
+
+446 
+	`£ndComm™d
+(
+OLED_MEMORYMODE
+);
+
+447 
+	`£ndComm™d
+(0x00);
+
+449 
+	`£ndComm™d
+(
+OLED_SEGREMAP
+ | 0x1);
+
 451 
+	`£ndComm™d
+(
+OLED_COMSCANDEC
+);
+
+453 
+	`£ndComm™d
+(
+OLED_SETCOMPINS
+);
+
+455 
+	`£ndComm™d
+(0x12);
+
+458 
+	`£ndComm™d
+(
+OLED_SETCONTRAST
+);
+
+460 
+	`£ndComm™d
+(0xCF);
+
+462 
+	`£ndComm™d
+(
+OLED_SETPRECHARGE
+);
+
+463 
+	`£ndComm™d
+(0xF1);
+
+465 
+	`£ndComm™d
+(
+OLED_SETVCOMDETECT
+);
+
+467 
+	`£ndComm™d
+(0x40);
+
+469 
+	`£ndComm™d
+(
+OLED_DISPLAYALLON_RESUME
+);
+
+472 
+	`£ndComm™d
+(
+OLED_NORMALDISPLAY
+);
+
+475 
+	`£ndComm™d
+(
+OLED_DISPLAYON
+);
+
+476 
+	}
+}
+
+489 
+	$maö
+()
+
+498 
+	`HAL_Inô
+();
+
+505 
+	`Sy°emClock_C⁄fig
+();
+
+512 
+	`MX_GPIO_Inô
+();
+
+513 
+	`MX_I2C1_Inô
+();
+
+515 
+	`HAL_Dñay
+(100);
+
+516 
+	`OLED_öô
+();
+
+517 
+	`LCD_CÀ¨
+();
+
+518 
+	`LCD_GŸo
+(0,0);
+
+519 
+	`OLED_°rög
+("Hello Drive 2!");
+
+520 
+	`LCD_GŸo
+(0,1);
+
+521 
+	`OLED_°rög
+("I2C BUS OLED SSD1306");
+
+522 
+	`LCD_GŸo
+(0,2);
+
+523 
+	`OLED_°rög
+("LCD OLED 128x64 0,96");
+
+536 
+	`LCD_GŸo
+(52,5);
+
+537 
+	`OLED_num_to_°r
+(
+gg
+++,5);
+
+538 
+	`HAL_Dñay
+(1);
+
+542 
+	}
+}
+
+548 
+	$Sy°emClock_C⁄fig
+()
+
+551 
+RCC_OscInôTy≥Def
+ 
+RCC_OscInôSåu˘
+;
+
+552 
+RCC_ClkInôTy≥Def
+ 
+RCC_ClkInôSåu˘
+;
+
+553 
+RCC_PîùhCLKInôTy≥Def
+ 
+PîùhClkInô
+;
+
+557 
+RCC_OscInôSåu˘
+.
+Oscûœt‹Ty≥
+ = 
+RCC_OSCILLATORTYPE_HSI
+;
+
+558 
+RCC_OscInôSåu˘
+.
+HSISèã
+ = 
+RCC_HSI_ON
+;
+
+559 
+RCC_OscInôSåu˘
+.
+HSICÆibøti⁄VÆue
+ = 16;
+
+560 
+RCC_OscInôSåu˘
+.
+PLL
+.
+PLLSèã
+ = 
+RCC_PLL_ON
+;
+
+561 
+RCC_OscInôSåu˘
+.
+PLL
+.
+PLLSour˚
+ = 
+RCC_PLLSOURCE_HSI
+;
+
+562 
+RCC_OscInôSåu˘
+.
+PLL
+.
+PLLMUL
+ = 
+RCC_PLL_MUL12
+;
+
+563 
+RCC_OscInôSåu˘
+.
+PLL
+.
+PREDIV
+ = 
+RCC_PREDIV_DIV1
+;
+
+564 i‡(
+	`HAL_RCC_OscC⁄fig
+(&
+RCC_OscInôSåu˘
+Ë!
+HAL_OK
+)
+
+566 
+	`_Eº‹_H™dÀr
+(
+__FILE__
+, 
+__LINE__
+);
+
+571 
+RCC_ClkInôSåu˘
+.
+ClockTy≥
+ = 
+RCC_CLOCKTYPE_HCLK
+|
+RCC_CLOCKTYPE_SYSCLK
+
+
+572 |
+RCC_CLOCKTYPE_PCLK1
+;
+
+573 
+RCC_ClkInôSåu˘
+.
+SYSCLKSour˚
+ = 
+RCC_SYSCLKSOURCE_PLLCLK
+;
+
+574 
+RCC_ClkInôSåu˘
+.
+AHBCLKDividî
+ = 
+RCC_SYSCLK_DIV1
+;
+
+575 
+RCC_ClkInôSåu˘
+.
+APB1CLKDividî
+ = 
+RCC_HCLK_DIV1
+;
+
+577 i‡(
+	`HAL_RCC_ClockC⁄fig
+(&
+RCC_ClkInôSåu˘
+, 
+FLASH_LATENCY_1
+Ë!
+HAL_OK
+)
+
+579 
+	`_Eº‹_H™dÀr
+(
+__FILE__
+, 
+__LINE__
+);
+
+582 
+PîùhClkInô
+.
+PîùhClockSñe˘i⁄
+ = 
+RCC_PERIPHCLK_I2C1
+;
+
+583 
+PîùhClkInô
+.
+I2c1ClockSñe˘i⁄
+ = 
+RCC_I2C1CLKSOURCE_HSI
+;
+
+584 i‡(
+	`HAL_RCCEx_PîùhCLKC⁄fig
+(&
+PîùhClkInô
+Ë!
+HAL_OK
+)
+
+586 
+	`_Eº‹_H™dÀr
+(
+__FILE__
+, 
+__LINE__
+);
+
+591 
+	`HAL_SYSTICK_C⁄fig
+(
+	`HAL_RCC_GëHCLKFªq
+()/1000);
+
+595 
+	`HAL_SYSTICK_CLKSour˚C⁄fig
+(
+SYSTICK_CLKSOURCE_HCLK
+);
+
+598 
+	`HAL_NVIC_SëPri‹ôy
+(
+SysTick_IRQn
+, 0, 0);
+
+599 
+	}
+}
+
+602 
+	$MX_I2C1_Inô
+()
+
+605 
+hi2c1
+.
+In°™˚
+ = 
+I2C1
+;
+
+606 
+hi2c1
+.
+Inô
+.
+Timög
+ = 0x0000020B;
+
+607 
+hi2c1
+.
+Inô
+.
+OwnAddªss1
+ = 0;
+
+608 
+hi2c1
+.
+Inô
+.
+AddªssögMode
+ = 
+I2C_ADDRESSINGMODE_7BIT
+;
+
+609 
+hi2c1
+.
+Inô
+.
+DuÆAddªssMode
+ = 
+I2C_DUALADDRESS_DISABLE
+;
+
+610 
+hi2c1
+.
+Inô
+.
+OwnAddªss2
+ = 0;
+
+611 
+hi2c1
+.
+Inô
+.
+OwnAddªss2Masks
+ = 
+I2C_OA2_NOMASK
+;
+
+612 
+hi2c1
+.
+Inô
+.
+GíîÆCÆlMode
+ = 
+I2C_GENERALCALL_DISABLE
+;
+
+613 
+hi2c1
+.
+Inô
+.
+NoSåëchMode
+ = 
+I2C_NOSTRETCH_DISABLE
+;
+
+614 i‡(
+	`HAL_I2C_Inô
+(&
+hi2c1
+Ë!
+HAL_OK
+)
+
+616 
+	`_Eº‹_H™dÀr
+(
+__FILE__
+, 
+__LINE__
+);
+
+621 i‡(
+	`HAL_I2CEx_C⁄figA«logFûãr
+(&
+hi2c1
+, 
+I2C_ANALOGFILTER_ENABLE
+Ë!
+HAL_OK
+)
+
+623 
+	`_Eº‹_H™dÀr
+(
+__FILE__
+, 
+__LINE__
+);
+
+628 i‡(
+	`HAL_I2CEx_C⁄figDigôÆFûãr
+(&
+hi2c1
+, 0Ë!
+HAL_OK
+)
+
+630 
+	`_Eº‹_H™dÀr
+(
+__FILE__
+, 
+__LINE__
+);
+
+633 
+	}
+}
+
+642 
+	$MX_GPIO_Inô
+()
+
+646 
+	`__HAL_RCC_GPIOA_CLK_ENABLE
+();
+
+648 
+	}
+}
+
+660 
+	$_Eº‹_H™dÀr
+(*
+fûe
+, 
+löe
+)
+
+668 
+	}
+}
+
+670 #ifde‡ 
+USE_FULL_ASSERT
+
+
+678 
+	$as£π_Áûed
+(
+uöt8_t
+* 
+fûe
+, 
+uöt32_t
+ 
+löe
+)
+
+684 
 	}
 }
 
@@ -575275,7 +576433,7 @@ Ch™√l
 	}
 }
 
-	@i2c_oled/Inc/main.h
+	@i2c_oled/Inc/oled.h
 
 41 #i‚de‡
 __MAIN_H__
@@ -575881,7 +577039,7 @@ SysTick_H™dÀr
 __˝lu•lus
 
 
-	@i2c_oled/Src/main.c
+	@i2c_oled/Src/oled.c
 
 39 
 	~"maö.h
@@ -596014,8 +597172,8 @@ __END_DECLS
 .
 1
 /usr/include
-176
-7594
+178
+7616
 Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
 Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
@@ -596083,6 +597241,7 @@ Inc/ILI9163.h
 Inc/gpio.h
 Inc/i2c.h
 Inc/main.h
+Inc/oled.h
 Inc/rtc.h
 Inc/spi.h
 Inc/stm32f4xx_hal_conf.h
@@ -596112,6 +597271,7 @@ Src/ILI9163.c
 Src/gpio.c
 Src/i2c.c
 Src/main.c
+Src/oled.c
 Src/rtc.c
 Src/spi.c
 Src/stm32f4xx_hal_msp.c
@@ -596170,10 +597330,10 @@ i2c_oled/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c
 i2c_oled/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c
 i2c_oled/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c
 i2c_oled/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c
-i2c_oled/Inc/main.h
+i2c_oled/Inc/oled.h
 i2c_oled/Inc/stm32f0xx_hal_conf.h
 i2c_oled/Inc/stm32f0xx_it.h
-i2c_oled/Src/main.c
+i2c_oled/Src/oled.c
 i2c_oled/Src/stm32f0xx_hal_msp.c
 i2c_oled/Src/stm32f0xx_it.c
 i2c_oled/Src/system_stm32f0xx.c
