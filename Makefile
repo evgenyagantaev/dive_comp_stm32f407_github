@@ -48,6 +48,8 @@ Src/stm32f4xx_hal_msp.c \
 Src/ILI9163.c \
 Src/GFXC.c \
 Src/oled.c \
+Src/fonts.c \
+Src/ssd1306.c \
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c \
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c \
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c \

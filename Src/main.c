@@ -46,8 +46,9 @@
 #include "usart.h"
 #include "gpio.h"
 
-#include <GFXC.h>
-#include <oled.h>
+//#include <GFXC.h>
+//#include <oled.h>
+#include "ssd1306.h"
 
 #define DEG_2_8 256.0
 #define DEG_2_23 8388608.0
@@ -62,7 +63,7 @@
 #define PRESSURE_OVERSAMPLING 100
 
 /* Private variables ---------------------------------------------------------*/
-TextParamStruct TS;
+//TextParamStruct TS;
 
 /* Private variables ---------------------------------------------------------*/
 
@@ -140,6 +141,7 @@ int main(void)
   	HAL_GPIO_WritePin(led_tft_GPIO_Port, led_tft_Pin, GPIO_PIN_SET); // turn tft led on
   	HAL_GPIO_WritePin(reset_tft_GPIO_Port, reset_tft_Pin, GPIO_PIN_SET); // tft reset high 
 	
+	/*
 	ILI9163Init();
 	ClrScrn();
 	TS.Size = 1;
@@ -150,14 +152,33 @@ int main(void)
 	TS.BkgCol = Black;
 
 	PStr("Hello!", &TS);
+	*/
 
-
+	/*
 	OLED_init();
 	LCD_Clear();
 	LCD_Goto(0,0);
 	OLED_string("DIVE COMPUTER");
 	LCD_Goto(0,2);
 	OLED_string("STARTING...");
+	*/
+
+
+  	ssd1306_Init();
+  	HAL_Delay(1000);
+  	ssd1306_Fill(White);
+  	ssd1306_UpdateScreen();
+  	HAL_Delay(1000);
+  	ssd1306_Fill(Black);
+  	ssd1306_UpdateScreen();
+
+  	HAL_Delay(1000);
+
+  	ssd1306_SetCursor(0,0);
+  	ssd1306_WriteString("DiveCmp", Font_16x26, White);
+  	ssd1306_SetCursor(0,30);
+  	ssd1306_WriteString("Start..", Font_16x26, White);
+  	ssd1306_UpdateScreen();
 	
 	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -211,7 +232,9 @@ int main(void)
 	double P;
 
 	HAL_Delay(1000);
-	LCD_Clear();
+  	
+	ssd1306_Fill(Black);
+  	ssd1306_UpdateScreen();
 
 	while (1)
 	{
@@ -339,40 +362,25 @@ int main(void)
 
 
 		//LCD_Clear();
-		LCD_Goto(0,0);
-		sprintf(timestamp, "%02x.%02x.%02x", sDate.Date, sDate.Month, sDate.Year);
-		OLED_string(timestamp);
-		LCD_Goto(0,2);
+		//*
+  		//ssd1306_SetCursor(0,0);
+		//sprintf(timestamp, "%02x.%02x.%02x", sDate.Date, sDate.Month, sDate.Year);
+  		//ssd1306_WriteString(timestamp, Font_11x18, White);
+  		ssd1306_SetCursor(0,0);
 		sprintf(timestamp, "%02x:%02x:%02x", sTime.Hours, sTime.Minutes, sTime.Seconds);
-		OLED_string(timestamp);
-		LCD_Goto(0,4);
+  		ssd1306_WriteString(timestamp, Font_11x18, White);
+  		ssd1306_SetCursor(0,22);
 		sprintf(message, "P %06d", (int32_t)P);
-		OLED_string(message);
-		LCD_Goto(0,6);
+  		ssd1306_WriteString(message, Font_11x18, White);
+  		ssd1306_SetCursor(0,44);
 		sprintf(message, "T %04d", (int32_t)actual_temperature);
-		OLED_string(message);
+  		ssd1306_WriteString(message, Font_11x18, White);
+  		ssd1306_UpdateScreen();
 
 		HAL_GPIO_TogglePin(GPIOA, led0_Pin);
-		HAL_Delay(1000);
+		//*/
+		HAL_Delay(100);
 
-
-
-
-
-		/*
-  		HAL_GPIO_WritePin(GPIOA, led0_Pin, GPIO_PIN_RESET);
-		sprintf(message, "led1 on\r\n");
-		HAL_UART_Transmit(&huart1, message, strlen((const char *)message), 500);
-		HAL_Delay(1000);
-  		HAL_GPIO_WritePin(GPIOA, led0_Pin, GPIO_PIN_SET);
-		HAL_Delay(1000);
-  		HAL_GPIO_WritePin(GPIOA, led1_Pin, GPIO_PIN_RESET);
-		sprintf(message, "led2 on\r\n");
-		HAL_UART_Transmit(&huart1, message, strlen((const char *)message), 500);
-		HAL_Delay(1000);
-  		HAL_GPIO_WritePin(GPIOA, led1_Pin, GPIO_PIN_SET);
-		HAL_Delay(1000);
-		*/
 
 	}
 
